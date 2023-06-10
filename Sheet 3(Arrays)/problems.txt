@@ -1,0 +1,118 @@
+G. Palindrome Array
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number 𝑁
+ and an array 𝐴
+ of 𝑁
+ numbers. Determine if it's palindrome or not.
+
+Note:
+
+An array is called palindrome if it reads the same backward and forward, for example, arrays { 1 } and { 1,2,3,2,1 } are palindromes, while arrays { 1,12 } and { 4,7,5,4 } are not.
+
+Input
+First line contains a number 𝑁
+ (1≤𝑁≤105)
+ number of elements.
+
+Second line contains 𝑁
+ numbers (1≤𝐴𝑖≤109)
+.
+
+Output
+Print "YES" (without quotes) if A is a palindrome array, otherwise, print "NO" (without quotes).
+
+Examples
+inputCopy
+5
+1 3 2 3 1
+outputCopy
+YES
+inputCopy
+4
+1 2 3 4
+outputCopy
+NO
+
+
+I. Smallest Pair
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number N and an array A of N numbers. Print the smallest possible result of Ai + Aj + j - i , where 1  ≤  i < j  ≤  N.
+
+Input
+The first line contains a number T (1 ≤ T ≤ 100) number of test cases.
+
+Each test case contains two lines:
+
+The first line consists a number N (2 ≤ N ≤ 100) number of elements.
+The second line contains N numbers ( - 106 ≤ Ai ≤ 106).
+Output
+For each test case print a single line contains the smallest possible sum for the corresponding test case.
+
+Example
+inputCopy
+1
+4
+20 1 9 4
+outputCopy
+7
+Note
+First Case :
+
+All possibles (i,j) where (1  ≤  i < j  ≤  N) are :
+
+i = 1 , j = 2 then result = a1 + a2 + j - i = 20 + 1 + 2-1 = 22.
+
+i = 1 , j = 3 then result = a1 + a3 + j - i = 20 + 9 + 3-1 = 31.
+
+i = 1 , j = 4 then result = a1 + a4 + j - i = 20 + 4 + 4-1 = 27.
+
+i = 2 , j = 3 then result = a2 + a3 + j - i = 1 + 9 + 3-2 = 11.
+
+i = 2 , j = 4 then result = a2 + a4 + j - i = 1 + 4 + 4-2 = 7.
+
+i = 3 , j = 4 then result = a3 + a4 + j - i = 9 + 4 + 4-3 = 14.
+
+So the smallest possible result is 7.
+
+J. Lucky Array
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number N and an array A of N numbers. Determine if the array is lucky or not.
+
+Note: the array is lucky if the frequency (number of occurrence) of the minimum element is odd.
+
+Input
+First line contains a number N (2 ≤ N ≤ 1000) number of elements.
+
+Second line contains N numbers ( - 105 ≤ Ai ≤ 105).
+
+Output
+Print "Lucky" (without quotes) if the frequency of the minimum element is odd, otherwise print "Unlucky"(without quotes).
+
+Examples
+inputCopy
+5
+8 8 9 5 9
+outputCopy
+Lucky
+inputCopy
+5
+3 3 3 5 3
+outputCopy
+Unlucky
+Note
+First Example :
+
+minimum element is 5 and its frequency is 1 and it's ODD so the array is lucky.
+
+Second Example :
+
+minimum element is 3 and its frequency is 4 and it's EVEN so the array is not lucky.

@@ -1,0 +1,751 @@
+A. Say Hello With C++
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a name S. Print "Hello, (name)" without parentheses.
+
+Input
+Only one line containing a string S.
+
+Output
+Print "Hello, " without quotes, then print name.
+
+Example
+inputCopy
+programmer
+outputCopy
+Hello, programmer
+
+B. Basic Data Types
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+The following lines show some C++ data types, their format specifiers and their most common bit widths:
+
+int : 32 Bit integer.
+long long : 64 bit integer
+Char : 8 bit Characters & symbols
+Float : 32 bit real value
+Double : 64 bit real value
+Reading
+
+To read a data type, use the following syntax:
+
+   cin >> VariableName;
+ 
+For example, to read a character followed by a double:
+  char ch;
+  double d;
+  cin >> ch >> d;
+ 
+Printing
+
+To print a data type, use the following syntax:
+
+cout << VariableName;
+ 
+For example, to print a character followed by a double:
+char ch = 'd';
+double d = 234.432;
+cout << ch << " "<< d;
+ 
+Input
+Only one line containing the following space-separated values: int, long long, char, float and double respectively.
+
+Output
+Print each element on a new line in the same order it was received as input.
+
+Don't print any extra spaces.
+
+Example
+inputCopy
+3 12345678912345 a 334.23 14049.30493
+outputCopy
+3
+12345678912345
+a
+334.23
+14049.3
+
+C. Simple Calculator
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given two numbers X and Y. Print the summation and multiplication and subtraction of these 2 numbers.
+
+Input
+Only one line containing two separated numbers X, Y (1  ≤  X, Y  ≤  105).
+
+Output
+Print 3 lines that contain the following in the same order:
+
+"X + Y = summation result" without quotes.
+"X * Y = multiplication result" without quotes.
+"X - Y = subtraction result" without quotes.
+Example
+inputCopy
+5 10
+outputCopy
+5 + 10 = 15
+5 * 10 = 50
+5 - 10 = -5
+Note
+Be careful with spaces.
+
+D. Difference
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given four numbers A, B, C and D. Print the result of the following equation :
+
+ X = (A * B) - (C * D).
+
+Input
+Only one line containing 4 separated numbers A, B, C and D ( - 105  ≤  A, B, C, D  ≤  105).
+
+Output
+Print "Difference  =  " without quotes followed by the equation result.
+
+Examples
+inputCopy
+1 2 3 4
+outputCopy
+Difference = -10
+inputCopy
+2 3 4 5
+outputCopy
+Difference = -14
+inputCopy
+4 5 2 3
+outputCopy
+Difference = 14
+
+
+E. Area of a Circle
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number R calculate the area of a circle using the following formula:
+
+Area = π * R2.
+
+Note: consider π = 3.141592653.
+
+Input
+Only one line containing the number R (1  ≤  R  ≤  100).
+
+Output
+Print the calculated area, with 9 digits after the decimal point.
+
+Example
+inputCopy
+2.00
+outputCopy
+12.566370612
+Note
+* Use the data type double for this problem.
+
+** Use setprecision(9) to print 9 digits after decimal point.
+
+*** you can use function setprecision that are in #include<iomanip> library for Example :
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+     cout << fixed << setprecision(9);
+     // your code.
+}
+
+F. Digits Summation
+time limit per test0.25 seconds
+memory limit per test64 megabytes
+inputstandard input
+outputstandard output
+Given two numbers N and M. Print the summation of their last digits.
+
+Input
+Only one line containing two numbers N, M (0 ≤ N, M ≤ 1018).
+
+Output
+Print the answer of the problem.
+
+Example
+inputCopy
+13 12
+outputCopy
+5
+Note
+First Example :
+
+last digit in the first number is 3 and last digit in the second number is 2.
+
+So the answer is: (3 + 2 = 5)
+
+G. Summation from 1 to N
+time limit per test0.25 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number 𝑁
+. Print the summation of the numbers that is between 1 and 𝑁
+ (inclusive).
+
+.∑𝑖=1𝑁𝑖
+Input
+Only one line containing a number 𝑁
+ (1≤𝑁≤109)
+Output
+Print the summation of the numbers that are between 1 and 𝑁
+ (inclusive).
+
+Examples
+inputCopy
+3
+outputCopy
+6
+inputCopy
+10
+outputCopy
+55
+Note
+First Example :
+
+the numbers between 1 and 3 are 1,2,3 .
+
+So the answer is: (1 + 2 + 3 = 6)
+
+Second Example :
+
+the numbers between 1 and 10 are 1,2,3,4,5,6,7,8,9,10.
+
+So the answer is: (1 + 2 + 3 + 4 + 5 + 6 +7 +8 + 9 + 10 = 55)
+
+
+
+H. Two numbers
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given 2 numbers 𝐴
+ and 𝐵
+. Print floor, ceil and round of 𝐴/𝐵
+
+Note:
+
+Floor: Is a mathematical function that takes a real number 𝑋
+ and its output is the greatest integer less than or equal to 𝑋
+.
+Ceil: Is a mathematical function that takes a real number 𝑋
+ and its output is the smallest integer larger than or equal to 𝑋
+.
+Round: Is a mathematical function that takes a real number 𝑋
+ and its output is the closest integer to that number 𝑋
+.
+
+For more clarification visit the links in the notes below.
+
+Input
+Only one line containing two numbers 𝐴
+ and 𝐵
+ (1≤𝐴,𝐵≤103)
+Output
+Print 3 lines that contain the following in the same order:
+
+"floor 𝐴
+ / 𝐵
+ = Floor result" without quotes.
+"ceil 𝐴
+ / 𝐵
+ = Ceil result" without quotes.
+"round 𝐴
+ / 𝐵
+ = Round result" without quotes.
+Examples
+inputCopy
+10 3
+outputCopy
+floor 10 / 3 = 3
+ceil 10 / 3 = 4
+round 10 / 3 = 3
+inputCopy
+10 4
+outputCopy
+floor 10 / 4 = 2
+ceil 10 / 4 = 3
+round 10 / 4 = 3
+inputCopy
+10 6
+outputCopy
+floor 10 / 6 = 1
+ceil 10 / 6 = 2
+round 10 / 6 = 2
+Note
+Links:
+
+For Rounding method visit: https://www.mathsisfun.com/numbers/rounding-methods.html.
+For Flooring and Ceiling method visit: https://www.mathsisfun.com/sets/function-floor-ceiling.html.
+
+
+L. The Brothers
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given two person names.
+
+Each person has {"the first name" + "the second name"}
+
+Determine whether they are brothers or not.
+
+Note: The two persons are brothers if they share the same second name.
+
+Input
+First line will contain two Strings F1, S1 which donates the first and second name of the 1st person.
+
+Second line will contain two Strings F2, S2 which donates the first and second name of the 2nd person.
+
+Output
+Print "ARE Brothers" if they are brothers otherwise print "NOT".
+
+Examples
+inputCopy
+bassam ramadan
+ahmed ramadan
+outputCopy
+ARE Brothers
+inputCopy
+ali salah
+ayman salah
+outputCopy
+ARE Brothers
+inputCopy
+ali kamel
+ali salah
+outputCopy
+NOT
+
+
+O. Calculator
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a mathematical expression. The expression will be one of the following expressions: 𝐴+𝐵
+, 𝐴−𝐵
+, 𝐴∗𝐵
+ and 𝐴/𝐵
+.
+
+Print the result of the mathematical expression.
+
+Input
+Only one line contains 𝐴,𝑆
+ and 𝐵
+ (1≤𝐴,𝐵≤104)
+, 𝑆
+ is either (+,−,∗,/)
+.
+
+Output
+Print the result of the mathematical expression.
+
+Examples
+inputCopy
+7+54
+outputCopy
+61
+inputCopy
+17*10
+outputCopy
+170
+Note
+For the dividing operation you should print the division without any fractions.
+
+
+
+Q. Coordinates of a Point
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given two numbers X, Y which donate coordinates of a point in 2D plan. Determine in which quarter does it belong.
+
+Note:
+
+Print Q1, Q2, Q3, Q4 according to the quarter in which the point belongs to.
+Print "Origem" If the point is at the origin.
+Print "Eixo X" If the point is over X axis.
+Print "Eixo Y" if the point is over Y axis.
+
+Input
+Only one line containing two numbers X, Y ( - 1000 ≤ X, Y ≤ 1000).
+
+Output
+Print the answer to problem above.
+
+Examples
+inputCopy
+4.5 -2.2
+outputCopy
+Q4
+inputCopy
+0.1 0.1
+outputCopy
+Q1
+
+
+R. Age in Days
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a Number N corresponding to a person's age (in days). Print his age in years, months and days, followed by its respective message "years", "months", "days".
+
+Note: consider the whole year has 365 days and 30 days per month.
+
+Input
+Only one line containing a number N (0 ≤ N ≤ 106).
+
+Output
+Print the output, like the following examples.
+
+Examples
+inputCopy
+400
+outputCopy
+1 years
+1 months
+5 days
+inputCopy
+800
+outputCopy
+2 years
+2 months
+10 days
+inputCopy
+30
+outputCopy
+0 years
+1 months
+0 days
+
+S. Interval
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number X. Determine in which of the following intervals the number X belongs to:
+
+[0,25], (25,50], (50,75], (75,100]
+
+Note:
+
+if X belongs to any of the above intervals print "Interval " followed by the interval.
+if X does not belong to any of the above intervals print "Out of Intervals".
+The symbol '(' represents greater than.
+The symbol ')' represents smaller than.
+The symbol '[' represents greater than or equal.
+The symbol ']' represents smaller than or equal.
+For example:
+
+[0,25] indicates numbers between 0 and 25.0000, including both.
+
+(25,50] indicates numbers greater than 25: (25.00001) up to 50.0000000.
+
+Input
+Only one line containing a number X ( - 1000 ≤ X ≤ 1000).
+
+Output
+Print the answer to the problem above.
+
+Examples
+inputCopy
+25.1
+outputCopy
+Interval (25,50]
+inputCopy
+25.0
+outputCopy
+Interval [0,25]
+inputCopy
+100.0
+outputCopy
+Interval (75,100]
+inputCopy
+-25.2
+outputCopy
+Out of Intervals
+
+T. Sort Numbers
+time limit per test0.25 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given three numbers A, B, C. Print these numbers in ascending order followed by a blank line and then the values in the sequence as they were read.
+
+Input
+Only one line containing three numbers A, B, C ( - 106  ≤  A, B, C  ≤  106)
+
+Output
+Print the values in ascending order followed by a blank line and then the values in the sequence as they were read.
+
+Examples
+inputCopy
+3 -2 1
+outputCopy
+-2
+1
+3
+
+3
+-2
+1
+inputCopy
+-2 10 0
+outputCopy
+-2
+0
+10
+
+-2
+10
+0
+
+
+U. Float or int
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number 𝑁
+. Determine whether 𝑁
+ is float number or integer number.
+
+Note:
+
+If 𝑁
+ is float number then print "float" followed by the integer part followed by decimal part separated by space.
+If 𝑁
+ is integer number then print "int" followed by the integer part separated by space.
+For more clarification see the examples below.
+
+Input
+Only one line containing a number 𝑁
+ (1≤𝑁≤103)
+Output
+Print the answer required above.
+
+Examples
+inputCopy
+234.000
+outputCopy
+int 234
+inputCopy
+534.958
+outputCopy
+float 534 0.958
+
+V. Comparison
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a comparison symbol S between two numbers A and B. Determine whether it is Right or Wrong.
+
+The comparison is as follows: A < B, A > B, A = B.
+
+Where A, B are two integer numbers and S refers to the sign between them.
+
+Input
+Only one line containing A, S and B respectively (-100  ≤  A, B  ≤  100), S can be ('<', '>','=') without the quotes.
+
+Output
+Print "Right" if the comparison is true, "Wrong" otherwise.
+
+Examples
+inputCopy
+5 > 4
+outputCopy
+Right
+inputCopy
+9 < 1
+outputCopy
+Wrong
+inputCopy
+4 = 4
+outputCopy
+Right
+
+W. Mathematical Expression
+time limit per test0.25 seconds
+memory limit per test256 MB
+inputstandard input
+outputstandard output
+Given a mathematical expression. The expression will be one of the following expressions:
+
+A + B = C, A - B = C and A * B = C
+
+where A, B, C are three numbers, S is the sign between A and B, and Q the '=' sign
+
+Print "Yes" If the expression is Right , Otherwise print the right answer of the expression.
+
+Input
+Only one line containing the expression: A, S, B, Q, C respectively (0 ≤ A, B ≤ 100,  - 105 ≤ C ≤ 105) and S can be ('+', '-', '*') without the quotation.
+
+Output
+Output either "Yes" (without the quotation) or the right answer depending on the statement.
+
+Examples
+inputCopy
+5 + 10 = 15
+outputCopy
+Yes
+inputCopy
+3 - 1 = 2
+outputCopy
+Yes
+inputCopy
+2 * 10 = 19
+outputCopy
+20
+
+
+X. Two intervals
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given the boundaries of 2 intervals. Print the boundaries of their intersection.
+
+Note: Boundaries mean the two ends of an interval which are the starting number and the ending number.
+
+Input
+Only one line contains two intervals [𝑙1,𝑟1]
+, [𝑙2,𝑟2]
+ where (1≤𝑙1,𝑙2,𝑟1,𝑟2≤109)
+, (𝑙1≤𝑟1,𝑙2≤𝑟2)
+.
+
+It's guaranteed that 𝑙1≤𝑟1
+ and 𝑙2≤𝑟2
+.
+
+Output
+If there is an intersection between these 2 intervals print its boundaries , otherwise print -1.
+
+Examples
+inputCopy
+1 15 5 27
+outputCopy
+5 15
+inputCopy
+2 5 6 12
+outputCopy
+-1
+Note
+First Example :
+
+
+Second Example :
+
+
+Y. The last 2 digits
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given 4 numbers 𝐴
+, 𝐵
+, 𝐶
+ and 𝐷
+. Print the last 2 digits from their Multiplication.
+
+Input
+Only one line containing four numbers 𝐴
+, 𝐵
+, 𝐶
+ and 𝐷
+ (2≤𝐴,𝐵,𝐶,𝐷≤109)
+.
+
+Output
+Print the last 2 digits from their Multiplication.
+
+Examples
+inputCopy
+5 7 2 4
+outputCopy
+80
+inputCopy
+3 9 9 9
+outputCopy
+87
+Note
+First Example :
+
+the Multiplication of 4 numbers is 5 * 7 * 2 * 4 = 280 so the answer will be the last 2 digits which are 80.
+
+Second Example :
+
+the Multiplication of 4 numbers is 3 * 9 * 9 * 9 = 2187 so the answer will be the last 2 digits which are 87.
+
+
+Z. Hard Compare
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given 4 numbers 𝐴,𝐵,𝐶
+ and 𝐷
+. If 𝐴𝐵
+ > 𝐶𝐷
+ print "YES" otherwise, print "NO".
+
+Input
+Only one line containing 4 numbers 𝐴,𝐵,𝐶
+ and 𝐷
+ (1≤𝐴,𝐶≤107)
+ , (1≤𝐵,𝐷≤1012)
+Output
+Print "YES" or "NO" according to the problem above.
+
+Examples
+inputCopy
+3 2 5 4
+outputCopy
+NO
+inputCopy
+5 2 4 2
+outputCopy
+YES
+inputCopy
+5 2 5 2
+outputCopy
+NO
+Note
+First Example :
+
+32
+ = 9 and 54
+ = 625 then 9 < 625 so the answer is NO.
+
+Second Example :
+
+52
+ = 25 and 42
+ = 16 then 25 > 16 so the answer is YES.
+
+Third Example :
+
+52
+ = 25 and 52
+ = 25 then 25 = 25 so the answer is NO.
+
