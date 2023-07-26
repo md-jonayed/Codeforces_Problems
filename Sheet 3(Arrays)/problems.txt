@@ -116,3 +116,142 @@ minimum element is 5 and its frequency is 1 and it's ODD so the array is lucky.
 Second Example :
 
 minimum element is 3 and its frequency is 4 and it's EVEN so the array is not lucky.
+
+L. Max Subarray
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+A sub-array of array is an array composed from a contiguous block of the original array's elements.
+
+In other words A sub-array A[i-j], where (1 ≤ i ≤ j ≤ N), is a sequence of integers Ai, Ai + 1, ..., Aj.
+
+For Example :
+
+IF array = [1,6,3,7] then the subarrays are [1] , [6] , [3] , [7] , [1,6] , [6,3],[3,7], [1,6,3] , [6,3,7] , [1,6,3,7] .
+
+Something like [1,3] would not be a sub-array as it's not a contiguous subsection of the original array.
+
+Given a number N and an array A of N numbers. Print the maximum number of every sub-array separated by space.
+
+Input
+First line contains a number T (1 ≤ T ≤ 5) number of test cases.
+
+Each test case contains two lines:
+
+First line contains a number N (1 ≤ N ≤ 100) number of elements.
+Second line contains N numbers ( - 105 ≤ Ai ≤ 105).
+Output
+For each test case print a single line contains the maximum number of every sub-array separated by space.
+
+print the answer in any order.
+
+Example
+inputCopy
+2
+4
+1 6 3 7
+3
+3 1 2
+outputCopy
+1 6 3 7 6 6 7 6 7 7
+3 3 3 1 2 2 
+Note
+First Case :
+
+All Sub arrays are :
+
+[1] , [6] , [3] , [7] , [1,6] , [6,3],[3,7], [1,6,3] , [6,3,7] , [1,6,3,7]
+
+- Sub-array [1] it maximum number is 1.
+
+- Sub-array [6] it maximum number is 6.
+
+- Sub-array [3] it maximum number is 3.
+
+- Sub-array [7] it maximum number is 7.
+
+- Sub-array [1,6] it maximum number is 6.
+
+- Sub-array [6,3] it maximum number is 6.
+
+- Sub-array [3,7] it maximum number is 7.
+
+- Sub-array [1,6,3] it maximum number is 6.
+
+- Sub-array [6,3,7] it maximum number is 7.
+
+- Sub-array [1,6,3,7] it maximum number is 7.
+
+so the maximum numbers are [ 1,6,3,7,6,6,7,6,7,7] you can print them in any order.
+
+
+N. Check Code
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given two numbers A, B and a code S consisting of digits (0,1,2,...,9) and a symbol '-'.
+
+Determine if the code follows the following rules or not:
+
+The position A + 1 in the code is the symbol '-'.
+All other characters are one of the following digits: (0,1,2,...,9).
+Input
+First line contains two numbers A, B (1 ≤ A, B ≤ 10).
+
+Second line contains S (|S| = A + B + 1) and consists of '-' and digits from 0 through 9.
+
+Output
+Print "Yes" if the code S follows the above rules otherwise, print "No".
+
+Examples
+inputCopy
+3 3
+269-665
+outputCopy
+Yes
+inputCopy
+1 1
+12-
+outputCopy
+No
+inputCopy
+1 2
+7444
+outputCopy
+No
+Note
+First example:
+
+The (A+1)-th character of code is '-', and the other characters are digits from '0' through '9', so it follows the format.
+
+O. Fibonacci
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Given a number N. Print the Fibonacci number of N.
+
+Note: In order to create the Fibonacci sequence use the following function:
+
+fib(1) = 0.
+fib(2) = 1.
+fib(n) = fib(n - 1) + fib(n - 2).
+Input
+Only one line containing a number N (1 ≤ N ≤ 50).
+
+Output
+Print the Fibonacci number of N.
+
+Examples
+inputCopy
+1
+outputCopy
+0
+inputCopy
+5
+outputCopy
+3
+Note
+For more information visit Fibonacci: https://www.mathsisfun.com/numbers/fibonacci-sequence.html.
